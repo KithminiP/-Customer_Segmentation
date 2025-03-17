@@ -1,0 +1,3267 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0208.0338                               -->
+<workbook original-version='18.1' source-build='2024.3.4 (20243.25.0208.0338)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SavingAnalyticObjects />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='credit_card_transactions' inline='true' name='federated.14q1ezj1b2dy1q1apatrh1m4pjtz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='credit_card_transactions' name='textscan.076znk61j3mpom188vpwu0wy31yr'>
+            <connection class='textscan' directory='C:/Users/kithm/OneDrive/Documents/My Tableau Repository' filename='credit_card_transactions.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.076znk61j3mpom188vpwu0wy31yr' name='credit_card_transactions.csv' table='[credit_card_transactions#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Unnamed: 0' ordinal='0' />
+            <column datatype='datetime' name='trans_date_trans_time' ordinal='1' />
+            <column datatype='integer' name='cc_num' ordinal='2' />
+            <column datatype='string' name='merchant' ordinal='3' />
+            <column datatype='string' name='category' ordinal='4' />
+            <column datatype='real' name='amt' ordinal='5' />
+            <column datatype='string' name='first' ordinal='6' />
+            <column datatype='string' name='last' ordinal='7' />
+            <column datatype='string' name='gender' ordinal='8' />
+            <column datatype='string' name='street' ordinal='9' />
+            <column datatype='string' name='city' ordinal='10' />
+            <column datatype='string' name='state' ordinal='11' />
+            <column datatype='integer' name='zip' ordinal='12' />
+            <column datatype='real' name='lat' ordinal='13' />
+            <column datatype='real' name='long' ordinal='14' />
+            <column datatype='integer' name='city_pop' ordinal='15' />
+            <column datatype='string' name='job' ordinal='16' />
+            <column datatype='date' name='dob' ordinal='17' />
+            <column datatype='string' name='trans_num' ordinal='18' />
+            <column datatype='integer' name='unix_time' ordinal='19' />
+            <column datatype='real' name='merch_lat' ordinal='20' />
+            <column datatype='real' name='merch_long' ordinal='21' />
+            <column datatype='integer' name='is_fraud' ordinal='22' />
+            <column datatype='integer' name='merch_zipcode' ordinal='23' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unnamed: 0</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unnamed: 0]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>Unnamed: 0</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trans_date_trans_time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[trans_date_trans_time]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>trans_date_trans_time</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cc_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cc_num]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>cc_num</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>merchant</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[merchant]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>merchant</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[amt]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>amt</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[first]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>first</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[last]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>last</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>street</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[street]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>street</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zip]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>zip</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lat]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>lat</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>long</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[long]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>long</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city_pop</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[city_pop]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>city_pop</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>job</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dob</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[dob]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>dob</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trans_num</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trans_num]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>trans_num</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unix_time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[unix_time]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>unix_time</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>merch_lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[merch_lat]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>merch_lat</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>merch_long</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[merch_long]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>merch_long</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_fraud</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_fraud]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>is_fraud</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>merch_zipcode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[merch_zipcode]</local-name>
+            <parent-name>[credit_card_transactions.csv]</parent-name>
+            <remote-alias>merch_zipcode</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[CC_No (clusters)]' parent-model='[AnalyticModel:{1b3eae28-e8f9-417b-a5c9-9149fd2fcb96}]' role='dimension' type='ordinal'>
+        <calculation class='categorical-bin' column='[cc_num]' default='&quot;Not Clustered&quot;' new-bin='true'>
+          <bin default-name='false' value='&quot;Cluster 1&quot;'>
+            <value>60416207185</value>
+            <value>60422928733</value>
+            <value>501802953619</value>
+            <value>501899453424</value>
+            <value>502012776709</value>
+            <value>502038091380</value>
+            <value>503848303379</value>
+            <value>561942763351</value>
+            <value>568279015842</value>
+            <value>571844099986</value>
+            <value>573860193545</value>
+            <value>577588686219</value>
+            <value>581293083266</value>
+            <value>583699482621</value>
+            <value>584673555952</value>
+            <value>630425673344</value>
+            <value>630441765090</value>
+            <value>630469040731</value>
+            <value>639030014711</value>
+            <value>675909898057</value>
+            <value>675945690716</value>
+            <value>675990301623</value>
+            <value>676173792455</value>
+            <value>676195318214</value>
+            <value>676281772837</value>
+            <value>676298633337</value>
+            <value>676369110710</value>
+            <value>4066595222529</value>
+            <value>4079773899158</value>
+            <value>4149635823017</value>
+            <value>4169388510116</value>
+            <value>4186530744674</value>
+            <value>4198470814557</value>
+            <value>4220345354880</value>
+            <value>4247921790666</value>
+            <value>4260128500325</value>
+            <value>4294930380592</value>
+            <value>4393520897625</value>
+            <value>4427805710168</value>
+            <value>4476840372112</value>
+            <value>4500002361389</value>
+            <value>4538566639857</value>
+            <value>4585132874641</value>
+            <value>4586260469584</value>
+            <value>4613314721966</value>
+            <value>4623560839669</value>
+            <value>4640395708703</value>
+            <value>4642894980163</value>
+            <value>4783226709001</value>
+            <value>4862293128558</value>
+            <value>4981132848794</value>
+            <value>4988304376504</value>
+            <value>4990494243023</value>
+            <value>30029052116970</value>
+            <value>30033162392091</value>
+            <value>30082025922891</value>
+            <value>30118423745458</value>
+            <value>30135235368675</value>
+            <value>30143535920989</value>
+            <value>30150717898388</value>
+            <value>30153452207526</value>
+            <value>30175986190993</value>
+            <value>30230540139182</value>
+            <value>30235268718158</value>
+            <value>30263540414123</value>
+            <value>30266994494236</value>
+            <value>30290551782700</value>
+            <value>30328384440870</value>
+            <value>30343344410970</value>
+            <value>30364087349027</value>
+            <value>30404291151692</value>
+            <value>30407675418785</value>
+            <value>30442439074871</value>
+            <value>30501624614310</value>
+            <value>30518206766474</value>
+            <value>30560609640617</value>
+            <value>30561214688470</value>
+            <value>36078114201167</value>
+            <value>36153880429415</value>
+            <value>36485887555770</value>
+            <value>36721445180895</value>
+            <value>38057513087029</value>
+            <value>38295635583927</value>
+            <value>38530489946071</value>
+            <value>38580485618059</value>
+            <value>38588538868506</value>
+            <value>38797410705641</value>
+            <value>38947654498698</value>
+            <value>180018375329178</value>
+            <value>180042946491150</value>
+            <value>180064817343047</value>
+            <value>180065479077096</value>
+            <value>180067151859700</value>
+            <value>180067784565096</value>
+            <value>180072527505094</value>
+            <value>180084576295055</value>
+            <value>213102873001603</value>
+            <value>213124978348176</value>
+            <value>213125815021702</value>
+            <value>213126662687660</value>
+            <value>213148039875802</value>
+            <value>213153151785052</value>
+            <value>213154573301411</value>
+            <value>213155997615567</value>
+            <value>213161231269724</value>
+            <value>213161293389774</value>
+            <value>213161869125933</value>
+            <value>213163860545705</value>
+            <value>213173753804333</value>
+            <value>213174467670432</value>
+            <value>213175487106448</value>
+            <value>213178765398315</value>
+            <value>213178850083780</value>
+            <value>213180742685905</value>
+            <value>213191402330021</value>
+            <value>213195754007681</value>
+            <value>213199865312311</value>
+            <value>340951438290556</value>
+            <value>341546199006537</value>
+            <value>342319985983023</value>
+            <value>342351256941125</value>
+            <value>343464013864032</value>
+            <value>343668971234893</value>
+            <value>343746486082492</value>
+            <value>344342339068828</value>
+            <value>345389171551808</value>
+            <value>345832460465610</value>
+            <value>347073228412010</value>
+            <value>348789608637806</value>
+            <value>349612764943496</value>
+            <value>370612217861404</value>
+            <value>371009169330125</value>
+            <value>372246459334925</value>
+            <value>372382441451095</value>
+            <value>373043435942726</value>
+            <value>374125201044065</value>
+            <value>374497717543058</value>
+            <value>374656033243756</value>
+            <value>375082648741747</value>
+            <value>375248307838179</value>
+            <value>375767678113375</value>
+            <value>375848982312810</value>
+            <value>375974680629816</value>
+            <value>376656886990758</value>
+            <value>377113842678100</value>
+            <value>377234009633447</value>
+            <value>377654590313960</value>
+            <value>377993105397617</value>
+            <value>378278619832195</value>
+            <value>378904938837132</value>
+            <value>2222001896600109</value>
+            <value>2229378226512508</value>
+            <value>2233882705243596</value>
+            <value>2235613922823698</value>
+            <value>2248735346244816</value>
+            <value>2254799658404120</value>
+            <value>2266735643685262</value>
+            <value>2269768987945882</value>
+            <value>2286236465059468</value>
+            <value>2288813824604479</value>
+            <value>2291163933867244</value>
+            <value>2296006538441789</value>
+            <value>2297447006766555</value>
+            <value>2305336922781618</value>
+            <value>2348245054386329</value>
+            <value>2383461948823908</value>
+            <value>2475085306462014</value>
+            <value>2576709887791552</value>
+            <value>2706977570537524</value>
+            <value>2713913904780408</value>
+            <value>2720830304681674</value>
+            <value>3501509250702469</value>
+            <value>3501942333500073</value>
+            <value>3502377050801561</value>
+            <value>3504178999463051</value>
+            <value>3506040590383211</value>
+            <value>3506042666828517</value>
+            <value>3506592072985012</value>
+            <value>3512365128314616</value>
+            <value>3513618443244549</value>
+            <value>3514865930894695</value>
+            <value>3514897282719543</value>
+            <value>3517527805128735</value>
+            <value>3518758680062249</value>
+            <value>3519607465576254</value>
+            <value>3521815216091574</value>
+            <value>3523843138706408</value>
+            <value>3523898249167098</value>
+            <value>3524574586339330</value>
+            <value>3525668150756629</value>
+            <value>3526826139003047</value>
+            <value>3529597810116815</value>
+            <value>3533012926413100</value>
+            <value>3533800906065217</value>
+            <value>3535808924394848</value>
+            <value>3538520143479972</value>
+            <value>3540075240003197</value>
+            <value>3540210836308425</value>
+            <value>3546897637165774</value>
+            <value>3547560454237873</value>
+            <value>3547574373318979</value>
+            <value>3549202406645667</value>
+            <value>3552581383553463</value>
+            <value>3558652751678952</value>
+            <value>3559679414981506</value>
+            <value>3559723917628303</value>
+            <value>3560318482131952</value>
+            <value>3560697798177746</value>
+            <value>3560725013359375</value>
+            <value>3561963695236764</value>
+            <value>3564839259330465</value>
+            <value>3566875419572867</value>
+            <value>3567879740649740</value>
+            <value>3568255211412877</value>
+            <value>3568736585751727</value>
+            <value>3573030041201292</value>
+            <value>3575540972310993</value>
+            <value>3582754887089201</value>
+            <value>3583793405872580</value>
+            <value>3585740823295298</value>
+            <value>3586955669388457</value>
+            <value>3587044315915002</value>
+            <value>3587960728692500</value>
+            <value>3591919803438423</value>
+            <value>3593118134380341</value>
+            <value>3596357274378601</value>
+            <value>3598014571045296</value>
+            <value>3598304579370089</value>
+            <value>4010002218955876</value>
+            <value>4025612008285111</value>
+            <value>4048508450704760</value>
+            <value>4060579726528237</value>
+            <value>4067137330196900</value>
+            <value>4119762878330989</value>
+            <value>4128027264554082</value>
+            <value>4147608975828480</value>
+            <value>4155021259183870</value>
+            <value>4158945090781624</value>
+            <value>4169759661243568</value>
+            <value>4173950183554608</value>
+            <value>4178097073221156</value>
+            <value>4191109180926792</value>
+            <value>4229733778084049</value>
+            <value>4239552724014407</value>
+            <value>4265776278887457</value>
+            <value>4277232699798846</value>
+            <value>4294040533480516</value>
+            <value>4302475216404898</value>
+            <value>4328928491302401</value>
+            <value>4342532437704183</value>
+            <value>4344955088481397</value>
+            <value>4365382885912355</value>
+            <value>4377338765909719</value>
+            <value>4378993458389626</value>
+            <value>4384910379661778</value>
+            <value>4423489490781412</value>
+            <value>4424338559877976</value>
+            <value>4430881574719618</value>
+            <value>4449530933957323</value>
+            <value>4450831335606294</value>
+            <value>4474324669797121</value>
+            <value>4482427013979020</value>
+            <value>4488941175228467</value>
+            <value>4509142395811241</value>
+            <value>4550599031376731</value>
+            <value>4587577161160601</value>
+            <value>4607072969078276</value>
+            <value>4610050989831291</value>
+            <value>4629451965224809</value>
+            <value>4634955908138648</value>
+            <value>4658490815480264</value>
+            <value>4671727014157745</value>
+            <value>4683520018489354</value>
+            <value>4707867759656333</value>
+            <value>4708992452821239</value>
+            <value>4727244663135968</value>
+            <value>4777065439639721</value>
+            <value>4800395067176717</value>
+            <value>4826655832045236</value>
+            <value>4839615922685395</value>
+            <value>4874017206859125</value>
+            <value>4926376199189801</value>
+            <value>4935858973307492</value>
+            <value>4951647200979051</value>
+            <value>5130484058948421</value>
+            <value>5152054598359927</value>
+            <value>5359543825610251</value>
+            <value>5388659976630693</value>
+            <value>5456776410929288</value>
+            <value>5501083170975659</value>
+            <value>5559857416065248</value>
+            <value>5580563567307107</value>
+            <value>5596347693144598</value>
+            <value>6011148190095209</value>
+            <value>6011329966782895</value>
+            <value>6011366578560244</value>
+            <value>6011388901471808</value>
+            <value>6011399591920186</value>
+            <value>6011492816282597</value>
+            <value>6011542681743618</value>
+            <value>6011552879910390</value>
+            <value>6011679934075347</value>
+            <value>6011860238257910</value>
+            <value>6011934240159560</value>
+            <value>6011999606625827</value>
+            <value>6511349151405438</value>
+            <value>6517217825320610</value>
+            <value>6544734391390261</value>
+            <value>6547670341037171</value>
+            <value>6554245334757802</value>
+            <value>6573561108825071</value>
+            <value>6592861994408652</value>
+            <value>6593250708747804</value>
+            <value>6595970453799027</value>
+            <value>6597888193422452</value>
+            <value>4040099974063068803</value>
+            <value>4089096483689733451</value>
+            <value>4092452671396169678</value>
+            <value>4102003771126577611</value>
+            <value>4128730454058057622</value>
+            <value>4208110975550360171</value>
+            <value>4210078554961359092</value>
+            <value>4292743669224718067</value>
+            <value>4292902571056973207</value>
+            <value>4319584480204988982</value>
+            <value>4355790796238264643</value>
+            <value>4379260813815979609</value>
+            <value>4400011257587661852</value>
+            <value>4469777115158234880</value>
+            <value>4477156602511939689</value>
+            <value>4488258847705225890</value>
+            <value>4502539526809429801</value>
+            <value>4503101193493052864</value>
+            <value>4560004149983868183</value>
+            <value>4584931703207308232</value>
+            <value>4689147265057948423</value>
+            <value>4710826438164847414</value>
+            <value>4715741951931168360</value>
+            <value>4736845434667908128</value>
+            <value>4742883543039288059</value>
+            <value>4761403817546679245</value>
+            <value>4769426683924058915</value>
+            <value>4810789809665942990</value>
+            <value>4810839835482794272</value>
+            <value>4890424426862856940</value>
+            <value>4958589671582726883</value>
+            <value>4992346398065154184</value>
+          </bin>
+          <bin default-name='false' value='&quot;Cluster 2&quot;'>
+            <value>60423098130</value>
+            <value>60427851591</value>
+            <value>60487002085</value>
+            <value>60490596305</value>
+            <value>60495593109</value>
+            <value>501818133297</value>
+            <value>501828204849</value>
+            <value>501831082224</value>
+            <value>501851115094</value>
+            <value>501882822387</value>
+            <value>501894933032</value>
+            <value>502049568400</value>
+            <value>503886119844</value>
+            <value>560881134780</value>
+            <value>565399283797</value>
+            <value>570273151375</value>
+            <value>571314334723</value>
+            <value>573283817795</value>
+            <value>577891228931</value>
+            <value>580954173374</value>
+            <value>581508178315</value>
+            <value>630412733309</value>
+            <value>630471368021</value>
+            <value>639046421587</value>
+            <value>639077309909</value>
+            <value>639095706599</value>
+            <value>675961917837</value>
+            <value>676118385837</value>
+            <value>676148621961</value>
+            <value>676179782773</value>
+            <value>676234256292</value>
+            <value>676245600876</value>
+            <value>676248282243</value>
+            <value>676275912597</value>
+            <value>676292294938</value>
+            <value>676308307625</value>
+            <value>676309913934</value>
+            <value>676314217768</value>
+            <value>676326610042</value>
+            <value>676327197445</value>
+            <value>4006047418382</value>
+            <value>4026222041577</value>
+            <value>4076173495454</value>
+            <value>4103158249977</value>
+            <value>4158008602445</value>
+            <value>4189814094741</value>
+            <value>4195740185974</value>
+            <value>4239436242473</value>
+            <value>4259996134423</value>
+            <value>4279161831637</value>
+            <value>4306630852918</value>
+            <value>4383521454815</value>
+            <value>4396682467723</value>
+            <value>4440581794652</value>
+            <value>4457486401506</value>
+            <value>4471568287204</value>
+            <value>4481131401752</value>
+            <value>4505383113689</value>
+            <value>4561892980175</value>
+            <value>4562827002127</value>
+            <value>4593569795412</value>
+            <value>4598025465633</value>
+            <value>4600155880464</value>
+            <value>4601636330889</value>
+            <value>4605902936394</value>
+            <value>4629125581019</value>
+            <value>4658117080136</value>
+            <value>4687263141103</value>
+            <value>4748866581408</value>
+            <value>4760122961662</value>
+            <value>4788103653396</value>
+            <value>4806443445305</value>
+            <value>4807552641361</value>
+            <value>4844243189971</value>
+            <value>4917226033950</value>
+            <value>4957924165498</value>
+            <value>4975457191020</value>
+            <value>30011465039817</value>
+            <value>30042378430132</value>
+            <value>30092964733035</value>
+            <value>30103132002433</value>
+            <value>30143713661454</value>
+            <value>30181367542315</value>
+            <value>30242921189660</value>
+            <value>30248898834493</value>
+            <value>30344654314976</value>
+            <value>30357372465631</value>
+            <value>30360260465747</value>
+            <value>30371006069917</value>
+            <value>30373802285317</value>
+            <value>30376238035123</value>
+            <value>30408301059761</value>
+            <value>30427035050508</value>
+            <value>30434173205605</value>
+            <value>30446018552504</value>
+            <value>30487648872433</value>
+            <value>30491348102802</value>
+            <value>30499715231997</value>
+            <value>30510856607165</value>
+            <value>30518196150127</value>
+            <value>30541100351706</value>
+            <value>30546453310167</value>
+            <value>30570197515105</value>
+            <value>30596478689301</value>
+            <value>36192615525683</value>
+            <value>36360452125889</value>
+            <value>36581538659449</value>
+            <value>36890292963032</value>
+            <value>38014427445058</value>
+            <value>38534201672254</value>
+            <value>38544312728630</value>
+            <value>38817501916673</value>
+            <value>38859492057661</value>
+            <value>180014262259255</value>
+            <value>180017442990269</value>
+            <value>180038493344495</value>
+            <value>180040027502291</value>
+            <value>180040131978916</value>
+            <value>180046165512893</value>
+            <value>180046617132290</value>
+            <value>180046765320457</value>
+            <value>180047222886866</value>
+            <value>180056173248083</value>
+            <value>180058696935600</value>
+            <value>180068353086472</value>
+            <value>180069253480336</value>
+            <value>180081032825079</value>
+            <value>180084695172649</value>
+            <value>180094608895855</value>
+            <value>180097223252063</value>
+            <value>213107169859697</value>
+            <value>213113028819344</value>
+            <value>213113338379864</value>
+            <value>213114122496591</value>
+            <value>213120463918358</value>
+            <value>213136802746375</value>
+            <value>213186334552049</value>
+            <value>213186551511454</value>
+            <value>213186880359195</value>
+            <value>213198837352314</value>
+            <value>340103199302564</value>
+            <value>340187018810220</value>
+            <value>340214844585279</value>
+            <value>341283058448499</value>
+            <value>341542810616333</value>
+            <value>342035762534413</value>
+            <value>342360239917375</value>
+            <value>343472729187663</value>
+            <value>343819048608995</value>
+            <value>345060451158891</value>
+            <value>345225948700767</value>
+            <value>346208242862904</value>
+            <value>346243940647414</value>
+            <value>347612609554823</value>
+            <value>348253506557335</value>
+            <value>348379466427142</value>
+            <value>349813394357327</value>
+            <value>370348764075623</value>
+            <value>370818583810103</value>
+            <value>371034293500716</value>
+            <value>371284100299909</value>
+            <value>371284424780634</value>
+            <value>371683116218417</value>
+            <value>371985236239474</value>
+            <value>373213026644490</value>
+            <value>374238209524200</value>
+            <value>374821819075109</value>
+            <value>375237305371366</value>
+            <value>375623337201129</value>
+            <value>375904527651269</value>
+            <value>376012912828093</value>
+            <value>376262134119629</value>
+            <value>376944481517097</value>
+            <value>377264520876399</value>
+            <value>377550167323848</value>
+            <value>377834944388609</value>
+            <value>377895991033232</value>
+            <value>378006354724784</value>
+            <value>378262805520186</value>
+            <value>378858024506425</value>
+            <value>379141394109214</value>
+            <value>379897244598068</value>
+            <value>2222157926772399</value>
+            <value>2224100459250597</value>
+            <value>2227671554547514</value>
+            <value>2229824890647120</value>
+            <value>2231186809828225</value>
+            <value>2235335206132667</value>
+            <value>2248348993063230</value>
+            <value>2256234701263057</value>
+            <value>2260801330657968</value>
+            <value>2268221587779419</value>
+            <value>2274911989136158</value>
+            <value>2280870154157385</value>
+            <value>2284059275940012</value>
+            <value>2285066385084291</value>
+            <value>2287277963630565</value>
+            <value>2288748891690227</value>
+            <value>2295963260374698</value>
+            <value>2318062975163331</value>
+            <value>2356276337669917</value>
+            <value>2358122155477959</value>
+            <value>2450829271795901</value>
+            <value>2454076758463217</value>
+            <value>2512312531485080</value>
+            <value>2610529083834453</value>
+            <value>2657850734909997</value>
+            <value>2714019737356678</value>
+            <value>2716017661090253</value>
+            <value>2719496466799416</value>
+            <value>2720894374956739</value>
+            <value>3500165543009955</value>
+            <value>3501285649323933</value>
+            <value>3501365119557234</value>
+            <value>3508104404056005</value>
+            <value>3511058278399773</value>
+            <value>3513285035244624</value>
+            <value>3513506355699497</value>
+            <value>3517814635263522</value>
+            <value>3519232971341141</value>
+            <value>3520550088202337</value>
+            <value>3521260686633367</value>
+            <value>3524485462198080</value>
+            <value>3527063666782582</value>
+            <value>3528040995648998</value>
+            <value>3528231451607350</value>
+            <value>3528407217576457</value>
+            <value>3529597930342630</value>
+            <value>3529788038921264</value>
+            <value>3530503964418806</value>
+            <value>3531606252458308</value>
+            <value>3533177016567295</value>
+            <value>3534093764340240</value>
+            <value>3534718226968689</value>
+            <value>3535211949888417</value>
+            <value>3536818734263520</value>
+            <value>3536918668124647</value>
+            <value>3537797820923602</value>
+            <value>3540017235499519</value>
+            <value>3540862542587229</value>
+            <value>3541554378551366</value>
+            <value>3541687240161491</value>
+            <value>3542162746848552</value>
+            <value>3542826960473004</value>
+            <value>3543299015720986</value>
+            <value>3543885983111461</value>
+            <value>3544606805704278</value>
+            <value>3545578418030657</value>
+            <value>3546436741611231</value>
+            <value>3546674063249004</value>
+            <value>3547336099599450</value>
+            <value>3548710338694745</value>
+            <value>3550554389581384</value>
+            <value>3551512895305309</value>
+            <value>3554421171166228</value>
+            <value>3554818239968984</value>
+            <value>3554849923339851</value>
+            <value>3557442674264531</value>
+            <value>3558881852140592</value>
+            <value>3560246577314524</value>
+            <value>3560336828629935</value>
+            <value>3561212938177173</value>
+            <value>3562264947797243</value>
+            <value>3562679455732797</value>
+            <value>3562793934111141</value>
+            <value>3563837241599446</value>
+            <value>3564182536169293</value>
+            <value>3565196229855512</value>
+            <value>3565414434959494</value>
+            <value>3565423334076143</value>
+            <value>3565943051129759</value>
+            <value>3565996340207976</value>
+            <value>3566373869538620</value>
+            <value>3567527758368741</value>
+            <value>3572976568630035</value>
+            <value>3573386445588324</value>
+            <value>3576144910346950</value>
+            <value>3576207763781753</value>
+            <value>3576281490078437</value>
+            <value>3576511691045060</value>
+            <value>3577596616955856</value>
+            <value>3577663406369449</value>
+            <value>3577794103155425</value>
+            <value>3579200383632826</value>
+            <value>3581130339108561</value>
+            <value>3582402971899057</value>
+            <value>3583093681934489</value>
+            <value>3583293909206278</value>
+            <value>3585052663373890</value>
+            <value>3590946339258737</value>
+            <value>3592325941359225</value>
+            <value>3592931352252641</value>
+            <value>3593399694467427</value>
+            <value>3595111028444131</value>
+            <value>3597337756918966</value>
+            <value>3597926034019603</value>
+            <value>3597980945245815</value>
+            <value>3598634130286287</value>
+            <value>3598895972308782</value>
+            <value>3599237318576484</value>
+            <value>4003771737807706</value>
+            <value>4070511711385545</value>
+            <value>4104312520615374</value>
+            <value>4116554952971686</value>
+            <value>4124536010991657</value>
+            <value>4129767952109660</value>
+            <value>4134456652433447</value>
+            <value>4157213332670159</value>
+            <value>4158758517677931</value>
+            <value>4168696938629925</value>
+            <value>4171397999167005</value>
+            <value>4179719215697782</value>
+            <value>4195832462863385</value>
+            <value>4204237326785494</value>
+            <value>4225628813173670</value>
+            <value>4228411452607671</value>
+            <value>4254074738931278</value>
+            <value>4260059589824237</value>
+            <value>4266200684857219</value>
+            <value>4306586894261180</value>
+            <value>4308156300921054</value>
+            <value>4318414072191879</value>
+            <value>4335531783520911</value>
+            <value>4348786085525522</value>
+            <value>4412720572684931</value>
+            <value>4425161475596168</value>
+            <value>4428154703770710</value>
+            <value>4433091568498503</value>
+            <value>4451438912406400</value>
+            <value>4492491748959010</value>
+            <value>4492677353108006</value>
+            <value>4501449508569485</value>
+            <value>4509922033272157</value>
+            <value>4518350514020532</value>
+            <value>4555104582813474</value>
+            <value>4561368699336875</value>
+            <value>4570636521433188</value>
+            <value>4575255480814133</value>
+            <value>4599285557366057</value>
+            <value>4610064888664703</value>
+            <value>4633065159406313</value>
+            <value>4635330563105903</value>
+            <value>4651007077623147</value>
+            <value>4657269323674365</value>
+            <value>4669558618943766</value>
+            <value>4670613943676271</value>
+            <value>4682744518117239</value>
+            <value>4698163635895795</value>
+            <value>4710792708725663</value>
+            <value>4713464490314802</value>
+            <value>4725673654161314</value>
+            <value>4734310647841293</value>
+            <value>4740713119940984</value>
+            <value>4764202053279782</value>
+            <value>4767265376804500</value>
+            <value>4789911625179723</value>
+            <value>4822367783500458</value>
+            <value>4824023901222438</value>
+            <value>4839043708100390</value>
+            <value>4859525594182537</value>
+            <value>4874006077381178</value>
+            <value>4878364946692291</value>
+            <value>4879265611163287</value>
+            <value>4893092478075970</value>
+            <value>4914700582394237</value>
+            <value>4917187576956394</value>
+            <value>4922710831011201</value>
+            <value>4933461930348832</value>
+            <value>4952583804639909</value>
+            <value>4961003488432306</value>
+            <value>4969856774088583</value>
+            <value>4972228199573984</value>
+            <value>4986925034905735</value>
+            <value>4996263498048679</value>
+            <value>5104807169438134</value>
+            <value>5127412150261034</value>
+            <value>5144043920225212</value>
+            <value>5154903938030655</value>
+            <value>5289285402893489</value>
+            <value>5301645381939419</value>
+            <value>5410056176712193</value>
+            <value>5456712664803820</value>
+            <value>6011099828110011</value>
+            <value>6011149206456997</value>
+            <value>6011197122270059</value>
+            <value>6011231546538393</value>
+            <value>6011252220172077</value>
+            <value>6011305591981276</value>
+            <value>6011360759745864</value>
+            <value>6011381817520024</value>
+            <value>6011382886333463</value>
+            <value>6011393492413821</value>
+            <value>6011477612335392</value>
+            <value>6011518448009279</value>
+            <value>6011581063717667</value>
+            <value>6011603272871604</value>
+            <value>6011626928491360</value>
+            <value>6011681934117244</value>
+            <value>6011706277606006</value>
+            <value>6011732631674654</value>
+            <value>6011826317034777</value>
+            <value>6011917798331152</value>
+            <value>6011935564104173</value>
+            <value>6011948324228984</value>
+            <value>6011975266774121</value>
+            <value>6500249000784905</value>
+            <value>6501313409525696</value>
+            <value>6502195877055606</value>
+            <value>6506982560413523</value>
+            <value>6515067575568369</value>
+            <value>6517779374888867</value>
+            <value>6523180720198790</value>
+            <value>6524376634971418</value>
+            <value>6526448584969862</value>
+            <value>6526777409109795</value>
+            <value>6526955903501879</value>
+            <value>6528911529051375</value>
+            <value>6535328428560433</value>
+            <value>6539653032686894</value>
+            <value>6540981358631302</value>
+            <value>6550399784335736</value>
+            <value>6564459919350820</value>
+            <value>6569097840281287</value>
+            <value>6577777028615915</value>
+            <value>6592074504369261</value>
+            <value>6592243974328236</value>
+            <value>6593939509150446</value>
+            <value>6596735789587928</value>
+            <value>6597248210463122</value>
+            <value>4018105808392773675</value>
+            <value>4044436772018844508</value>
+            <value>4045036286570100739</value>
+            <value>4063094974360571498</value>
+            <value>4110266553600176127</value>
+            <value>4162872756672112717</value>
+            <value>4180192513916047166</value>
+            <value>4209696857872688515</value>
+            <value>4220495028289516646</value>
+            <value>4225990116481262579</value>
+            <value>4226219726886852999</value>
+            <value>4243521033756702612</value>
+            <value>4244953610136705533</value>
+            <value>4255397449664185994</value>
+            <value>4257110907449569602</value>
+            <value>4311368326621416041</value>
+            <value>4312133045694601139</value>
+            <value>4358137750029944984</value>
+            <value>4373370572092720777</value>
+            <value>4390966588600992777</value>
+            <value>4410582919485061752</value>
+            <value>4426075337087318654</value>
+            <value>4428780983793657331</value>
+            <value>4457136361520330110</value>
+            <value>4462038234743679432</value>
+            <value>4467456915153312231</value>
+            <value>4481172224716138389</value>
+            <value>4497451418073897078</value>
+            <value>4497913965512794052</value>
+            <value>4599735407877245080</value>
+            <value>4653178848915023204</value>
+            <value>4659625317833446364</value>
+            <value>4661996144291811856</value>
+            <value>4666314527820883145</value>
+            <value>4714017207228610634</value>
+            <value>4725837176265195730</value>
+            <value>4756039869079882102</value>
+            <value>4798937978667559470</value>
+            <value>4855853415727304322</value>
+            <value>4897067971111209737</value>
+            <value>4911818930706644725</value>
+            <value>4973530368125489546</value>
+            <value>4980323467523543940</value>
+            <value>4989847570577635369</value>
+          </bin>
+          <bin default-name='false' value='&quot;Cluster 3&quot;'>
+            <value>503874407318</value>
+            <value>571465035400</value>
+            <value>581686439828</value>
+            <value>630423337322</value>
+            <value>630424987505</value>
+            <value>630484879808</value>
+            <value>639023984367</value>
+            <value>676102124465</value>
+            <value>676372984911</value>
+            <value>4464457352619</value>
+            <value>4561546772499</value>
+            <value>4681699462969</value>
+            <value>4683638447911</value>
+            <value>4755696071492</value>
+            <value>4809701904914</value>
+            <value>4900628639996</value>
+            <value>30026790933302</value>
+            <value>30030380240193</value>
+            <value>30074693890476</value>
+            <value>30197398657930</value>
+            <value>30234966027947</value>
+            <value>30235438713303</value>
+            <value>30238755902988</value>
+            <value>30270432095985</value>
+            <value>30428204673351</value>
+            <value>38052002992326</value>
+            <value>38199021865320</value>
+            <value>180011453250192</value>
+            <value>180036456789979</value>
+            <value>180049032966888</value>
+            <value>213112402583773</value>
+            <value>213156747557083</value>
+            <value>213193596103206</value>
+            <value>340953839692349</value>
+            <value>342952484382519</value>
+            <value>345933964507467</value>
+            <value>371226440126102</value>
+            <value>374930071163758</value>
+            <value>375534208663984</value>
+            <value>376028110684021</value>
+            <value>376445266762684</value>
+            <value>377026671291680</value>
+            <value>2252055259910912</value>
+            <value>2254917871818484</value>
+            <value>2264937662466770</value>
+            <value>2283743876903625</value>
+            <value>2703186189652095</value>
+            <value>2720012583106919</value>
+            <value>2720433095629877</value>
+            <value>3500969075198072</value>
+            <value>3502088871723054</value>
+            <value>3511378610369890</value>
+            <value>3518669219150142</value>
+            <value>3525590521269779</value>
+            <value>3527536963490470</value>
+            <value>3533742182628021</value>
+            <value>3534330126107879</value>
+            <value>3541160328600277</value>
+            <value>3543591270174051</value>
+            <value>3545109339866548</value>
+            <value>3553629419254918</value>
+            <value>3556613125071656</value>
+            <value>3559160581764413</value>
+            <value>3560797065840735</value>
+            <value>3567697931646329</value>
+            <value>3575789281659026</value>
+            <value>3576021480694169</value>
+            <value>3577578023716568</value>
+            <value>3589255887819806</value>
+            <value>3589289942931264</value>
+            <value>3595192916105588</value>
+            <value>3596217206093829</value>
+            <value>4003989662068504</value>
+            <value>4005676619255478</value>
+            <value>4069975342931683</value>
+            <value>4099707841315751</value>
+            <value>4149238353975790</value>
+            <value>4170689372027579</value>
+            <value>4302480582202074</value>
+            <value>4334230547694630</value>
+            <value>4364010865167176</value>
+            <value>4446368897795790</value>
+            <value>4451952084362894</value>
+            <value>4452366298769043</value>
+            <value>4514242065619750</value>
+            <value>4642255475285942</value>
+            <value>4653879239169997</value>
+            <value>4716561796955522</value>
+            <value>4841313716651064</value>
+            <value>4873783502705038</value>
+            <value>4904681492230012</value>
+            <value>4979422371139333</value>
+            <value>4997733566924489</value>
+            <value>4998109455173950</value>
+            <value>5540636818935089</value>
+            <value>6011104316292105</value>
+            <value>6011348830550197</value>
+            <value>6011504998544485</value>
+            <value>6011652924285713</value>
+            <value>6011693194885790</value>
+            <value>6506116513503136</value>
+            <value>6534628260579800</value>
+            <value>4181833256558613886</value>
+            <value>4223708906367574214</value>
+            <value>4301028321766222513</value>
+            <value>4457732997086323466</value>
+            <value>4512828414983801773</value>
+            <value>4536996888716062123</value>
+            <value>4560395181594436016</value>
+            <value>4797297220948468262</value>
+            <value>4855488158131690372</value>
+            <value>4906628655840914250</value>
+            <value>4956828990005111019</value>
+          </bin>
+          <bin default-name='false' value='&quot;Cluster 4&quot;'>
+            <value>567868110212</value>
+            <value>571365235126</value>
+            <value>630451534402</value>
+            <value>4745996322265</value>
+            <value>30044330818990</value>
+            <value>30131826429364</value>
+            <value>30199621383748</value>
+            <value>30273037698427</value>
+            <value>30551643947183</value>
+            <value>36722699017270</value>
+            <value>36913587729122</value>
+            <value>180031190491743</value>
+            <value>180048185037117</value>
+            <value>180094419304907</value>
+            <value>213141712584544</value>
+            <value>213157767990030</value>
+            <value>344709867813900</value>
+            <value>346273234529002</value>
+            <value>370877495212014</value>
+            <value>372509258176510</value>
+            <value>372520049757633</value>
+            <value>373905417449658</value>
+            <value>2242542703101233</value>
+            <value>2712209726293386</value>
+            <value>3518234918950662</value>
+            <value>3521417320836166</value>
+            <value>3531129874770000</value>
+            <value>3551217896304745</value>
+            <value>3566094707272327</value>
+            <value>3576431665303017</value>
+            <value>3583635130604947</value>
+            <value>3586008444788268</value>
+            <value>3590736522064285</value>
+            <value>3598215285024754</value>
+            <value>4586810168620942</value>
+            <value>4681601008538160</value>
+            <value>4836998673805450</value>
+            <value>4908846471916297</value>
+            <value>4939976756738216</value>
+            <value>6011109736646996</value>
+            <value>6011367958204270</value>
+            <value>6011438889172900</value>
+            <value>6011724471098086</value>
+            <value>6011893664860915</value>
+            <value>6538441737335434</value>
+            <value>6538891242532018</value>
+            <value>4587657402165341815</value>
+            <value>4646845581490336108</value>
+            <value>4792627764422477317</value>
+            <value>4861310130652566408</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='Total Spend' datatype='real' name='[Calculation_963207428348813314]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([amt])' />
+      </column>
+      <column caption='Transaction Frequency' datatype='integer' name='[Calculation_963207428349132803]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([trans_num])' />
+      </column>
+      <column caption='Customer Age' datatype='integer' name='[Calculation_963207428349329412]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&apos;year&apos;, [dob], TODAY())' />
+      </column>
+      <column caption='Calculation1' datatype='real' name='[Calculation_963207428361633799]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='' />
+      </column>
+      <column caption='Count_Customers' datatype='integer' name='[Calculation_963207428361658376]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([cc_num])' />
+      </column>
+      <column caption='File_Name' datatype='integer' name='[Unnamed: 0]' role='measure' type='quantitative' />
+      <column caption='credit_card_transactions.csv' datatype='table' name='[__tableau_internal_object_id__].[credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B]' role='measure' type='quantitative' />
+      <column caption='Amount' datatype='real' name='[amt]' role='measure' type='quantitative' />
+      <column caption='Transaction_Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='CC_No' datatype='integer' name='[cc_num]' role='dimension' type='ordinal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='City_Pop' datatype='integer' name='[city_pop]' role='measure' type='quantitative' />
+      <column caption='DOB' datatype='date' name='[dob]' role='dimension' type='ordinal' />
+      <column caption='First_Name' datatype='string' name='[first]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Is_Fraud' datatype='integer' name='[is_fraud]' role='measure' type='quantitative' />
+      <column caption='Job' datatype='string' name='[job]' role='dimension' type='nominal' />
+      <column caption='Last_Name' datatype='string' name='[last]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Lattiude' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longtitue' datatype='real' name='[long]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Merch_Lat' datatype='real' name='[merch_lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Merch_Long' datatype='real' name='[merch_long]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Merch_Zipcode' datatype='integer' default-format='*00000' name='[merch_zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Merchant' datatype='string' name='[merchant]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Street' datatype='string' name='[street]' role='dimension' type='nominal' />
+      <column caption='Trans_Date_Time' datatype='datetime' name='[trans_date_trans_time]' role='dimension' type='ordinal' />
+      <column caption='Trans_No' datatype='string' name='[trans_num]' role='dimension' type='nominal' />
+      <column caption='Unix_Time' datatype='integer' name='[unix_time]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Zip' datatype='integer' default-format='*00000' name='[zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column-instance column='[cc_num]' derivation='None' name='[none:cc_num:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_963207428348813314]' derivation='User' name='[usr:Calculation_963207428348813314:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_963207428349132803]' derivation='User' name='[usr:Calculation_963207428349132803:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='shape' field='[none:AdhocCluster:1:ok]' type='shape'>
+            <map to='circle'>
+              <bucket>1</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>3</bucket>
+            </map>
+            <map to='square'>
+              <bucket>2</bucket>
+            </map>
+            <map to='times'>
+              <bucket>4</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[CC_No (clusters)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cluster 1&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Cluster 4&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cluster 3&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cluster 2&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[CC_No (clusters)]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Cluster 1&quot;</bucket>
+            <bucket>&quot;Cluster 2&quot;</bucket>
+            <bucket>&quot;Cluster 3&quot;</bucket>
+            <bucket>&quot;Cluster 4&quot;</bucket>
+            <bucket>&quot;Not Clustered&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{1b3eae28-e8f9-417b-a5c9-9149fd2fcb96}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[usr:Calculation_963207428348813314:qk]' />
+            <field name='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[usr:Calculation_963207428349132803:qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields>
+            <field name='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:cc_num:ok]' />
+          </lod-fields>
+          <number-of-desired-clusters>4</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{6c8d1239-9160-4b7b-832b-4e3e632b6953}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[usr:Calculation_963207428348813314:qk]' />
+            <field name='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[usr:Calculation_963207428349132803:qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>4</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{ed2f6f83-0187-4640-8ca4-31d8335f80d9}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[usr:Calculation_963207428348813314:qk]' />
+            <field name='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[usr:Calculation_963207428349132803:qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>4</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <object-graph>
+        <objects>
+          <object caption='credit_card_transactions.csv' id='credit_card_transactions.csv_0446E367D14649F58C9B553E3C038D6B'>
+            <properties context=''>
+              <relation connection='textscan.076znk61j3mpom188vpwu0wy31yr' name='credit_card_transactions.csv' table='[credit_card_transactions#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Unnamed: 0' ordinal='0' />
+                  <column datatype='datetime' name='trans_date_trans_time' ordinal='1' />
+                  <column datatype='integer' name='cc_num' ordinal='2' />
+                  <column datatype='string' name='merchant' ordinal='3' />
+                  <column datatype='string' name='category' ordinal='4' />
+                  <column datatype='real' name='amt' ordinal='5' />
+                  <column datatype='string' name='first' ordinal='6' />
+                  <column datatype='string' name='last' ordinal='7' />
+                  <column datatype='string' name='gender' ordinal='8' />
+                  <column datatype='string' name='street' ordinal='9' />
+                  <column datatype='string' name='city' ordinal='10' />
+                  <column datatype='string' name='state' ordinal='11' />
+                  <column datatype='integer' name='zip' ordinal='12' />
+                  <column datatype='real' name='lat' ordinal='13' />
+                  <column datatype='real' name='long' ordinal='14' />
+                  <column datatype='integer' name='city_pop' ordinal='15' />
+                  <column datatype='string' name='job' ordinal='16' />
+                  <column datatype='date' name='dob' ordinal='17' />
+                  <column datatype='string' name='trans_num' ordinal='18' />
+                  <column datatype='integer' name='unix_time' ordinal='19' />
+                  <column datatype='real' name='merch_lat' ordinal='20' />
+                  <column datatype='real' name='merch_long' ordinal='21' />
+                  <column datatype='integer' name='is_fraud' ordinal='22' />
+                  <column datatype='integer' name='merch_zipcode' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='CC_Customer_Segmentation_Box_plot'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run>Total Spend and Transaction Frequency for each Clusters.  Details are shown for CC_No. The data is filtered on count of Customer Age, which ranges from 7 to 3,123. 
+</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Cluster 1- Frequent Shoppers with Moderate Spend</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Cluster 2- </run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Low Spenders, Low Frequency</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'> (Upsell Opportunity)</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Cluster 3-</run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>High-Value Customers</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'> (Luxury or Premium Users)</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Cluster 4-</run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Super High Spenders &amp; Frequent Users</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'> (Top Priority Customers)</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='credit_card_transactions' name='federated.14q1ezj1b2dy1q1apatrh1m4pjtz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14q1ezj1b2dy1q1apatrh1m4pjtz'>
+            <column auto-hidden='true' caption='Clusters' datatype='integer' hidden='true' is-adhoc-cluster='true' name='[AdhocCluster:1]' parent-model='[AnalyticModel:{6c8d1239-9160-4b7b-832b-4e3e632b6953}]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='-1' value='Cluster Outliers' />
+                <alias key='0' value='Not Clustered' />
+                <alias key='1' value='Cluster 1' />
+                <alias key='2' value='Cluster 2' />
+                <alias key='3' value='Cluster 3' />
+                <alias key='4' value='Cluster 4' />
+                <alias key='5' value='Cluster 5' />
+                <alias key='6' value='Cluster 6' />
+                <alias key='7' value='Cluster 7' />
+                <alias key='8' value='Cluster 8' />
+                <alias key='9' value='Cluster 9' />
+                <alias key='10' value='Cluster 10' />
+                <alias key='11' value='Cluster 11' />
+                <alias key='12' value='Cluster 12' />
+                <alias key='13' value='Cluster 13' />
+                <alias key='14' value='Cluster 14' />
+                <alias key='15' value='Cluster 15' />
+                <alias key='16' value='Cluster 16' />
+                <alias key='17' value='Cluster 17' />
+                <alias key='18' value='Cluster 18' />
+                <alias key='19' value='Cluster 19' />
+                <alias key='20' value='Cluster 20' />
+                <alias key='21' value='Cluster 21' />
+                <alias key='22' value='Cluster 22' />
+                <alias key='23' value='Cluster 23' />
+                <alias key='24' value='Cluster 24' />
+                <alias key='25' value='Cluster 25' />
+                <alias key='26' value='Cluster 26' />
+                <alias key='27' value='Cluster 27' />
+                <alias key='28' value='Cluster 28' />
+                <alias key='29' value='Cluster 29' />
+                <alias key='30' value='Cluster 30' />
+                <alias key='31' value='Cluster 31' />
+                <alias key='32' value='Cluster 32' />
+                <alias key='33' value='Cluster 33' />
+                <alias key='34' value='Cluster 34' />
+                <alias key='35' value='Cluster 35' />
+                <alias key='36' value='Cluster 36' />
+                <alias key='37' value='Cluster 37' />
+                <alias key='38' value='Cluster 38' />
+                <alias key='39' value='Cluster 39' />
+                <alias key='40' value='Cluster 40' />
+                <alias key='41' value='Cluster 41' />
+                <alias key='42' value='Cluster 42' />
+                <alias key='43' value='Cluster 43' />
+                <alias key='44' value='Cluster 44' />
+                <alias key='45' value='Cluster 45' />
+                <alias key='46' value='Cluster 46' />
+                <alias key='47' value='Cluster 47' />
+                <alias key='48' value='Cluster 48' />
+                <alias key='49' value='Cluster 49' />
+                <alias key='50' value='Cluster 50' />
+              </aliases>
+            </column>
+            <column caption='Total Spend' datatype='real' name='[Calculation_963207428348813314]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([amt])' />
+            </column>
+            <column caption='Transaction Frequency' datatype='integer' name='[Calculation_963207428349132803]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([trans_num])' />
+            </column>
+            <column caption='Customer Age' datatype='integer' name='[Calculation_963207428349329412]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;year&apos;, [dob], TODAY())' />
+            </column>
+            <column caption='Amount' datatype='real' name='[amt]' role='measure' type='quantitative' />
+            <column caption='CC_No' datatype='integer' name='[cc_num]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_963207428349329412]' derivation='Count' name='[cnt:Calculation_963207428349329412:qk]' pivot='key' type='quantitative' />
+            <column caption='DOB' datatype='date' name='[dob]' role='dimension' type='ordinal' />
+            <column-instance column='[AdhocCluster:1]' derivation='None' is-adhoc-cluster='true' name='[none:AdhocCluster:1:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[cc_num]' derivation='None' name='[none:cc_num:ok]' pivot='key' type='ordinal' />
+            <column caption='Trans_No' datatype='string' name='[trans_num]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_963207428348813314]' derivation='User' name='[usr:Calculation_963207428348813314:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_963207428349132803]' derivation='User' name='[usr:Calculation_963207428349132803:qk]' pivot='key' type='quantitative' />
+            <style>
+              <style-rule element='mark'>
+                <encoding attr='shape' field='[none:AdhocCluster:1:ok]' type='shape'>
+                  <map to='circle'>
+                    <bucket>1</bucket>
+                  </map>
+                  <map to='plus'>
+                    <bucket>3</bucket>
+                  </map>
+                  <map to='square'>
+                    <bucket>2</bucket>
+                  </map>
+                  <map to='times'>
+                    <bucket>4</bucket>
+                  </map>
+                </encoding>
+              </style-rule>
+            </style>
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[cnt:Calculation_963207428349329412:qk]' included-values='in-range'>
+            <min>7</min>
+            <max>3123</max>
+          </filter>
+          <slices>
+            <column>[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[cnt:Calculation_963207428349329412:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:AdhocCluster:1:ok]' value='112' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <lod column='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:cc_num:ok]' />
+            </encodings>
+            <reference-line axis-column='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[usr:Calculation_963207428348813314:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[usr:Calculation_963207428348813314:qk]' z-order='1' />
+            <reference-line axis-column='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[usr:Calculation_963207428349132803:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[usr:Calculation_963207428349132803:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[usr:Calculation_963207428348813314:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <lod column='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:cc_num:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[usr:Calculation_963207428349132803:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <lod column='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:cc_num:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[usr:Calculation_963207428348813314:qk] + [federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[usr:Calculation_963207428349132803:qk])</rows>
+        <cols>[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:AdhocCluster:1:ok]</cols>
+      </table>
+      <simple-id uuid='{2499C557-AD6A-47B8-B589-B831A16FE101}' />
+    </worksheet>
+    <worksheet name='Customer_Segmentation_Pie_Chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='credit_card_transactions' name='federated.14q1ezj1b2dy1q1apatrh1m4pjtz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14q1ezj1b2dy1q1apatrh1m4pjtz'>
+            <column datatype='string' name='[CC_No (clusters)]' parent-model='[AnalyticModel:{1b3eae28-e8f9-417b-a5c9-9149fd2fcb96}]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[cc_num]' default='&quot;Not Clustered&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;Cluster 1&quot;'>
+                  <value>60416207185</value>
+                  <value>60422928733</value>
+                  <value>501802953619</value>
+                  <value>501899453424</value>
+                  <value>502012776709</value>
+                  <value>502038091380</value>
+                  <value>503848303379</value>
+                  <value>561942763351</value>
+                  <value>568279015842</value>
+                  <value>571844099986</value>
+                  <value>573860193545</value>
+                  <value>577588686219</value>
+                  <value>581293083266</value>
+                  <value>583699482621</value>
+                  <value>584673555952</value>
+                  <value>630425673344</value>
+                  <value>630441765090</value>
+                  <value>630469040731</value>
+                  <value>639030014711</value>
+                  <value>675909898057</value>
+                  <value>675945690716</value>
+                  <value>675990301623</value>
+                  <value>676173792455</value>
+                  <value>676195318214</value>
+                  <value>676281772837</value>
+                  <value>676298633337</value>
+                  <value>676369110710</value>
+                  <value>4066595222529</value>
+                  <value>4079773899158</value>
+                  <value>4149635823017</value>
+                  <value>4169388510116</value>
+                  <value>4186530744674</value>
+                  <value>4198470814557</value>
+                  <value>4220345354880</value>
+                  <value>4247921790666</value>
+                  <value>4260128500325</value>
+                  <value>4294930380592</value>
+                  <value>4393520897625</value>
+                  <value>4427805710168</value>
+                  <value>4476840372112</value>
+                  <value>4500002361389</value>
+                  <value>4538566639857</value>
+                  <value>4585132874641</value>
+                  <value>4586260469584</value>
+                  <value>4613314721966</value>
+                  <value>4623560839669</value>
+                  <value>4640395708703</value>
+                  <value>4642894980163</value>
+                  <value>4783226709001</value>
+                  <value>4862293128558</value>
+                  <value>4981132848794</value>
+                  <value>4988304376504</value>
+                  <value>4990494243023</value>
+                  <value>30029052116970</value>
+                  <value>30033162392091</value>
+                  <value>30082025922891</value>
+                  <value>30118423745458</value>
+                  <value>30135235368675</value>
+                  <value>30143535920989</value>
+                  <value>30150717898388</value>
+                  <value>30153452207526</value>
+                  <value>30175986190993</value>
+                  <value>30230540139182</value>
+                  <value>30235268718158</value>
+                  <value>30263540414123</value>
+                  <value>30266994494236</value>
+                  <value>30290551782700</value>
+                  <value>30328384440870</value>
+                  <value>30343344410970</value>
+                  <value>30364087349027</value>
+                  <value>30404291151692</value>
+                  <value>30407675418785</value>
+                  <value>30442439074871</value>
+                  <value>30501624614310</value>
+                  <value>30518206766474</value>
+                  <value>30560609640617</value>
+                  <value>30561214688470</value>
+                  <value>36078114201167</value>
+                  <value>36153880429415</value>
+                  <value>36485887555770</value>
+                  <value>36721445180895</value>
+                  <value>38057513087029</value>
+                  <value>38295635583927</value>
+                  <value>38530489946071</value>
+                  <value>38580485618059</value>
+                  <value>38588538868506</value>
+                  <value>38797410705641</value>
+                  <value>38947654498698</value>
+                  <value>180018375329178</value>
+                  <value>180042946491150</value>
+                  <value>180064817343047</value>
+                  <value>180065479077096</value>
+                  <value>180067151859700</value>
+                  <value>180067784565096</value>
+                  <value>180072527505094</value>
+                  <value>180084576295055</value>
+                  <value>213102873001603</value>
+                  <value>213124978348176</value>
+                  <value>213125815021702</value>
+                  <value>213126662687660</value>
+                  <value>213148039875802</value>
+                  <value>213153151785052</value>
+                  <value>213154573301411</value>
+                  <value>213155997615567</value>
+                  <value>213161231269724</value>
+                  <value>213161293389774</value>
+                  <value>213161869125933</value>
+                  <value>213163860545705</value>
+                  <value>213173753804333</value>
+                  <value>213174467670432</value>
+                  <value>213175487106448</value>
+                  <value>213178765398315</value>
+                  <value>213178850083780</value>
+                  <value>213180742685905</value>
+                  <value>213191402330021</value>
+                  <value>213195754007681</value>
+                  <value>213199865312311</value>
+                  <value>340951438290556</value>
+                  <value>341546199006537</value>
+                  <value>342319985983023</value>
+                  <value>342351256941125</value>
+                  <value>343464013864032</value>
+                  <value>343668971234893</value>
+                  <value>343746486082492</value>
+                  <value>344342339068828</value>
+                  <value>345389171551808</value>
+                  <value>345832460465610</value>
+                  <value>347073228412010</value>
+                  <value>348789608637806</value>
+                  <value>349612764943496</value>
+                  <value>370612217861404</value>
+                  <value>371009169330125</value>
+                  <value>372246459334925</value>
+                  <value>372382441451095</value>
+                  <value>373043435942726</value>
+                  <value>374125201044065</value>
+                  <value>374497717543058</value>
+                  <value>374656033243756</value>
+                  <value>375082648741747</value>
+                  <value>375248307838179</value>
+                  <value>375767678113375</value>
+                  <value>375848982312810</value>
+                  <value>375974680629816</value>
+                  <value>376656886990758</value>
+                  <value>377113842678100</value>
+                  <value>377234009633447</value>
+                  <value>377654590313960</value>
+                  <value>377993105397617</value>
+                  <value>378278619832195</value>
+                  <value>378904938837132</value>
+                  <value>2222001896600109</value>
+                  <value>2229378226512508</value>
+                  <value>2233882705243596</value>
+                  <value>2235613922823698</value>
+                  <value>2248735346244816</value>
+                  <value>2254799658404120</value>
+                  <value>2266735643685262</value>
+                  <value>2269768987945882</value>
+                  <value>2286236465059468</value>
+                  <value>2288813824604479</value>
+                  <value>2291163933867244</value>
+                  <value>2296006538441789</value>
+                  <value>2297447006766555</value>
+                  <value>2305336922781618</value>
+                  <value>2348245054386329</value>
+                  <value>2383461948823908</value>
+                  <value>2475085306462014</value>
+                  <value>2576709887791552</value>
+                  <value>2706977570537524</value>
+                  <value>2713913904780408</value>
+                  <value>2720830304681674</value>
+                  <value>3501509250702469</value>
+                  <value>3501942333500073</value>
+                  <value>3502377050801561</value>
+                  <value>3504178999463051</value>
+                  <value>3506040590383211</value>
+                  <value>3506042666828517</value>
+                  <value>3506592072985012</value>
+                  <value>3512365128314616</value>
+                  <value>3513618443244549</value>
+                  <value>3514865930894695</value>
+                  <value>3514897282719543</value>
+                  <value>3517527805128735</value>
+                  <value>3518758680062249</value>
+                  <value>3519607465576254</value>
+                  <value>3521815216091574</value>
+                  <value>3523843138706408</value>
+                  <value>3523898249167098</value>
+                  <value>3524574586339330</value>
+                  <value>3525668150756629</value>
+                  <value>3526826139003047</value>
+                  <value>3529597810116815</value>
+                  <value>3533012926413100</value>
+                  <value>3533800906065217</value>
+                  <value>3535808924394848</value>
+                  <value>3538520143479972</value>
+                  <value>3540075240003197</value>
+                  <value>3540210836308425</value>
+                  <value>3546897637165774</value>
+                  <value>3547560454237873</value>
+                  <value>3547574373318979</value>
+                  <value>3549202406645667</value>
+                  <value>3552581383553463</value>
+                  <value>3558652751678952</value>
+                  <value>3559679414981506</value>
+                  <value>3559723917628303</value>
+                  <value>3560318482131952</value>
+                  <value>3560697798177746</value>
+                  <value>3560725013359375</value>
+                  <value>3561963695236764</value>
+                  <value>3564839259330465</value>
+                  <value>3566875419572867</value>
+                  <value>3567879740649740</value>
+                  <value>3568255211412877</value>
+                  <value>3568736585751727</value>
+                  <value>3573030041201292</value>
+                  <value>3575540972310993</value>
+                  <value>3582754887089201</value>
+                  <value>3583793405872580</value>
+                  <value>3585740823295298</value>
+                  <value>3586955669388457</value>
+                  <value>3587044315915002</value>
+                  <value>3587960728692500</value>
+                  <value>3591919803438423</value>
+                  <value>3593118134380341</value>
+                  <value>3596357274378601</value>
+                  <value>3598014571045296</value>
+                  <value>3598304579370089</value>
+                  <value>4010002218955876</value>
+                  <value>4025612008285111</value>
+                  <value>4048508450704760</value>
+                  <value>4060579726528237</value>
+                  <value>4067137330196900</value>
+                  <value>4119762878330989</value>
+                  <value>4128027264554082</value>
+                  <value>4147608975828480</value>
+                  <value>4155021259183870</value>
+                  <value>4158945090781624</value>
+                  <value>4169759661243568</value>
+                  <value>4173950183554608</value>
+                  <value>4178097073221156</value>
+                  <value>4191109180926792</value>
+                  <value>4229733778084049</value>
+                  <value>4239552724014407</value>
+                  <value>4265776278887457</value>
+                  <value>4277232699798846</value>
+                  <value>4294040533480516</value>
+                  <value>4302475216404898</value>
+                  <value>4328928491302401</value>
+                  <value>4342532437704183</value>
+                  <value>4344955088481397</value>
+                  <value>4365382885912355</value>
+                  <value>4377338765909719</value>
+                  <value>4378993458389626</value>
+                  <value>4384910379661778</value>
+                  <value>4423489490781412</value>
+                  <value>4424338559877976</value>
+                  <value>4430881574719618</value>
+                  <value>4449530933957323</value>
+                  <value>4450831335606294</value>
+                  <value>4474324669797121</value>
+                  <value>4482427013979020</value>
+                  <value>4488941175228467</value>
+                  <value>4509142395811241</value>
+                  <value>4550599031376731</value>
+                  <value>4587577161160601</value>
+                  <value>4607072969078276</value>
+                  <value>4610050989831291</value>
+                  <value>4629451965224809</value>
+                  <value>4634955908138648</value>
+                  <value>4658490815480264</value>
+                  <value>4671727014157745</value>
+                  <value>4683520018489354</value>
+                  <value>4707867759656333</value>
+                  <value>4708992452821239</value>
+                  <value>4727244663135968</value>
+                  <value>4777065439639721</value>
+                  <value>4800395067176717</value>
+                  <value>4826655832045236</value>
+                  <value>4839615922685395</value>
+                  <value>4874017206859125</value>
+                  <value>4926376199189801</value>
+                  <value>4935858973307492</value>
+                  <value>4951647200979051</value>
+                  <value>5130484058948421</value>
+                  <value>5152054598359927</value>
+                  <value>5359543825610251</value>
+                  <value>5388659976630693</value>
+                  <value>5456776410929288</value>
+                  <value>5501083170975659</value>
+                  <value>5559857416065248</value>
+                  <value>5580563567307107</value>
+                  <value>5596347693144598</value>
+                  <value>6011148190095209</value>
+                  <value>6011329966782895</value>
+                  <value>6011366578560244</value>
+                  <value>6011388901471808</value>
+                  <value>6011399591920186</value>
+                  <value>6011492816282597</value>
+                  <value>6011542681743618</value>
+                  <value>6011552879910390</value>
+                  <value>6011679934075347</value>
+                  <value>6011860238257910</value>
+                  <value>6011934240159560</value>
+                  <value>6011999606625827</value>
+                  <value>6511349151405438</value>
+                  <value>6517217825320610</value>
+                  <value>6544734391390261</value>
+                  <value>6547670341037171</value>
+                  <value>6554245334757802</value>
+                  <value>6573561108825071</value>
+                  <value>6592861994408652</value>
+                  <value>6593250708747804</value>
+                  <value>6595970453799027</value>
+                  <value>6597888193422452</value>
+                  <value>4040099974063068803</value>
+                  <value>4089096483689733451</value>
+                  <value>4092452671396169678</value>
+                  <value>4102003771126577611</value>
+                  <value>4128730454058057622</value>
+                  <value>4208110975550360171</value>
+                  <value>4210078554961359092</value>
+                  <value>4292743669224718067</value>
+                  <value>4292902571056973207</value>
+                  <value>4319584480204988982</value>
+                  <value>4355790796238264643</value>
+                  <value>4379260813815979609</value>
+                  <value>4400011257587661852</value>
+                  <value>4469777115158234880</value>
+                  <value>4477156602511939689</value>
+                  <value>4488258847705225890</value>
+                  <value>4502539526809429801</value>
+                  <value>4503101193493052864</value>
+                  <value>4560004149983868183</value>
+                  <value>4584931703207308232</value>
+                  <value>4689147265057948423</value>
+                  <value>4710826438164847414</value>
+                  <value>4715741951931168360</value>
+                  <value>4736845434667908128</value>
+                  <value>4742883543039288059</value>
+                  <value>4761403817546679245</value>
+                  <value>4769426683924058915</value>
+                  <value>4810789809665942990</value>
+                  <value>4810839835482794272</value>
+                  <value>4890424426862856940</value>
+                  <value>4958589671582726883</value>
+                  <value>4992346398065154184</value>
+                </bin>
+                <bin default-name='false' value='&quot;Cluster 2&quot;'>
+                  <value>60423098130</value>
+                  <value>60427851591</value>
+                  <value>60487002085</value>
+                  <value>60490596305</value>
+                  <value>60495593109</value>
+                  <value>501818133297</value>
+                  <value>501828204849</value>
+                  <value>501831082224</value>
+                  <value>501851115094</value>
+                  <value>501882822387</value>
+                  <value>501894933032</value>
+                  <value>502049568400</value>
+                  <value>503886119844</value>
+                  <value>560881134780</value>
+                  <value>565399283797</value>
+                  <value>570273151375</value>
+                  <value>571314334723</value>
+                  <value>573283817795</value>
+                  <value>577891228931</value>
+                  <value>580954173374</value>
+                  <value>581508178315</value>
+                  <value>630412733309</value>
+                  <value>630471368021</value>
+                  <value>639046421587</value>
+                  <value>639077309909</value>
+                  <value>639095706599</value>
+                  <value>675961917837</value>
+                  <value>676118385837</value>
+                  <value>676148621961</value>
+                  <value>676179782773</value>
+                  <value>676234256292</value>
+                  <value>676245600876</value>
+                  <value>676248282243</value>
+                  <value>676275912597</value>
+                  <value>676292294938</value>
+                  <value>676308307625</value>
+                  <value>676309913934</value>
+                  <value>676314217768</value>
+                  <value>676326610042</value>
+                  <value>676327197445</value>
+                  <value>4006047418382</value>
+                  <value>4026222041577</value>
+                  <value>4076173495454</value>
+                  <value>4103158249977</value>
+                  <value>4158008602445</value>
+                  <value>4189814094741</value>
+                  <value>4195740185974</value>
+                  <value>4239436242473</value>
+                  <value>4259996134423</value>
+                  <value>4279161831637</value>
+                  <value>4306630852918</value>
+                  <value>4383521454815</value>
+                  <value>4396682467723</value>
+                  <value>4440581794652</value>
+                  <value>4457486401506</value>
+                  <value>4471568287204</value>
+                  <value>4481131401752</value>
+                  <value>4505383113689</value>
+                  <value>4561892980175</value>
+                  <value>4562827002127</value>
+                  <value>4593569795412</value>
+                  <value>4598025465633</value>
+                  <value>4600155880464</value>
+                  <value>4601636330889</value>
+                  <value>4605902936394</value>
+                  <value>4629125581019</value>
+                  <value>4658117080136</value>
+                  <value>4687263141103</value>
+                  <value>4748866581408</value>
+                  <value>4760122961662</value>
+                  <value>4788103653396</value>
+                  <value>4806443445305</value>
+                  <value>4807552641361</value>
+                  <value>4844243189971</value>
+                  <value>4917226033950</value>
+                  <value>4957924165498</value>
+                  <value>4975457191020</value>
+                  <value>30011465039817</value>
+                  <value>30042378430132</value>
+                  <value>30092964733035</value>
+                  <value>30103132002433</value>
+                  <value>30143713661454</value>
+                  <value>30181367542315</value>
+                  <value>30242921189660</value>
+                  <value>30248898834493</value>
+                  <value>30344654314976</value>
+                  <value>30357372465631</value>
+                  <value>30360260465747</value>
+                  <value>30371006069917</value>
+                  <value>30373802285317</value>
+                  <value>30376238035123</value>
+                  <value>30408301059761</value>
+                  <value>30427035050508</value>
+                  <value>30434173205605</value>
+                  <value>30446018552504</value>
+                  <value>30487648872433</value>
+                  <value>30491348102802</value>
+                  <value>30499715231997</value>
+                  <value>30510856607165</value>
+                  <value>30518196150127</value>
+                  <value>30541100351706</value>
+                  <value>30546453310167</value>
+                  <value>30570197515105</value>
+                  <value>30596478689301</value>
+                  <value>36192615525683</value>
+                  <value>36360452125889</value>
+                  <value>36581538659449</value>
+                  <value>36890292963032</value>
+                  <value>38014427445058</value>
+                  <value>38534201672254</value>
+                  <value>38544312728630</value>
+                  <value>38817501916673</value>
+                  <value>38859492057661</value>
+                  <value>180014262259255</value>
+                  <value>180017442990269</value>
+                  <value>180038493344495</value>
+                  <value>180040027502291</value>
+                  <value>180040131978916</value>
+                  <value>180046165512893</value>
+                  <value>180046617132290</value>
+                  <value>180046765320457</value>
+                  <value>180047222886866</value>
+                  <value>180056173248083</value>
+                  <value>180058696935600</value>
+                  <value>180068353086472</value>
+                  <value>180069253480336</value>
+                  <value>180081032825079</value>
+                  <value>180084695172649</value>
+                  <value>180094608895855</value>
+                  <value>180097223252063</value>
+                  <value>213107169859697</value>
+                  <value>213113028819344</value>
+                  <value>213113338379864</value>
+                  <value>213114122496591</value>
+                  <value>213120463918358</value>
+                  <value>213136802746375</value>
+                  <value>213186334552049</value>
+                  <value>213186551511454</value>
+                  <value>213186880359195</value>
+                  <value>213198837352314</value>
+                  <value>340103199302564</value>
+                  <value>340187018810220</value>
+                  <value>340214844585279</value>
+                  <value>341283058448499</value>
+                  <value>341542810616333</value>
+                  <value>342035762534413</value>
+                  <value>342360239917375</value>
+                  <value>343472729187663</value>
+                  <value>343819048608995</value>
+                  <value>345060451158891</value>
+                  <value>345225948700767</value>
+                  <value>346208242862904</value>
+                  <value>346243940647414</value>
+                  <value>347612609554823</value>
+                  <value>348253506557335</value>
+                  <value>348379466427142</value>
+                  <value>349813394357327</value>
+                  <value>370348764075623</value>
+                  <value>370818583810103</value>
+                  <value>371034293500716</value>
+                  <value>371284100299909</value>
+                  <value>371284424780634</value>
+                  <value>371683116218417</value>
+                  <value>371985236239474</value>
+                  <value>373213026644490</value>
+                  <value>374238209524200</value>
+                  <value>374821819075109</value>
+                  <value>375237305371366</value>
+                  <value>375623337201129</value>
+                  <value>375904527651269</value>
+                  <value>376012912828093</value>
+                  <value>376262134119629</value>
+                  <value>376944481517097</value>
+                  <value>377264520876399</value>
+                  <value>377550167323848</value>
+                  <value>377834944388609</value>
+                  <value>377895991033232</value>
+                  <value>378006354724784</value>
+                  <value>378262805520186</value>
+                  <value>378858024506425</value>
+                  <value>379141394109214</value>
+                  <value>379897244598068</value>
+                  <value>2222157926772399</value>
+                  <value>2224100459250597</value>
+                  <value>2227671554547514</value>
+                  <value>2229824890647120</value>
+                  <value>2231186809828225</value>
+                  <value>2235335206132667</value>
+                  <value>2248348993063230</value>
+                  <value>2256234701263057</value>
+                  <value>2260801330657968</value>
+                  <value>2268221587779419</value>
+                  <value>2274911989136158</value>
+                  <value>2280870154157385</value>
+                  <value>2284059275940012</value>
+                  <value>2285066385084291</value>
+                  <value>2287277963630565</value>
+                  <value>2288748891690227</value>
+                  <value>2295963260374698</value>
+                  <value>2318062975163331</value>
+                  <value>2356276337669917</value>
+                  <value>2358122155477959</value>
+                  <value>2450829271795901</value>
+                  <value>2454076758463217</value>
+                  <value>2512312531485080</value>
+                  <value>2610529083834453</value>
+                  <value>2657850734909997</value>
+                  <value>2714019737356678</value>
+                  <value>2716017661090253</value>
+                  <value>2719496466799416</value>
+                  <value>2720894374956739</value>
+                  <value>3500165543009955</value>
+                  <value>3501285649323933</value>
+                  <value>3501365119557234</value>
+                  <value>3508104404056005</value>
+                  <value>3511058278399773</value>
+                  <value>3513285035244624</value>
+                  <value>3513506355699497</value>
+                  <value>3517814635263522</value>
+                  <value>3519232971341141</value>
+                  <value>3520550088202337</value>
+                  <value>3521260686633367</value>
+                  <value>3524485462198080</value>
+                  <value>3527063666782582</value>
+                  <value>3528040995648998</value>
+                  <value>3528231451607350</value>
+                  <value>3528407217576457</value>
+                  <value>3529597930342630</value>
+                  <value>3529788038921264</value>
+                  <value>3530503964418806</value>
+                  <value>3531606252458308</value>
+                  <value>3533177016567295</value>
+                  <value>3534093764340240</value>
+                  <value>3534718226968689</value>
+                  <value>3535211949888417</value>
+                  <value>3536818734263520</value>
+                  <value>3536918668124647</value>
+                  <value>3537797820923602</value>
+                  <value>3540017235499519</value>
+                  <value>3540862542587229</value>
+                  <value>3541554378551366</value>
+                  <value>3541687240161491</value>
+                  <value>3542162746848552</value>
+                  <value>3542826960473004</value>
+                  <value>3543299015720986</value>
+                  <value>3543885983111461</value>
+                  <value>3544606805704278</value>
+                  <value>3545578418030657</value>
+                  <value>3546436741611231</value>
+                  <value>3546674063249004</value>
+                  <value>3547336099599450</value>
+                  <value>3548710338694745</value>
+                  <value>3550554389581384</value>
+                  <value>3551512895305309</value>
+                  <value>3554421171166228</value>
+                  <value>3554818239968984</value>
+                  <value>3554849923339851</value>
+                  <value>3557442674264531</value>
+                  <value>3558881852140592</value>
+                  <value>3560246577314524</value>
+                  <value>3560336828629935</value>
+                  <value>3561212938177173</value>
+                  <value>3562264947797243</value>
+                  <value>3562679455732797</value>
+                  <value>3562793934111141</value>
+                  <value>3563837241599446</value>
+                  <value>3564182536169293</value>
+                  <value>3565196229855512</value>
+                  <value>3565414434959494</value>
+                  <value>3565423334076143</value>
+                  <value>3565943051129759</value>
+                  <value>3565996340207976</value>
+                  <value>3566373869538620</value>
+                  <value>3567527758368741</value>
+                  <value>3572976568630035</value>
+                  <value>3573386445588324</value>
+                  <value>3576144910346950</value>
+                  <value>3576207763781753</value>
+                  <value>3576281490078437</value>
+                  <value>3576511691045060</value>
+                  <value>3577596616955856</value>
+                  <value>3577663406369449</value>
+                  <value>3577794103155425</value>
+                  <value>3579200383632826</value>
+                  <value>3581130339108561</value>
+                  <value>3582402971899057</value>
+                  <value>3583093681934489</value>
+                  <value>3583293909206278</value>
+                  <value>3585052663373890</value>
+                  <value>3590946339258737</value>
+                  <value>3592325941359225</value>
+                  <value>3592931352252641</value>
+                  <value>3593399694467427</value>
+                  <value>3595111028444131</value>
+                  <value>3597337756918966</value>
+                  <value>3597926034019603</value>
+                  <value>3597980945245815</value>
+                  <value>3598634130286287</value>
+                  <value>3598895972308782</value>
+                  <value>3599237318576484</value>
+                  <value>4003771737807706</value>
+                  <value>4070511711385545</value>
+                  <value>4104312520615374</value>
+                  <value>4116554952971686</value>
+                  <value>4124536010991657</value>
+                  <value>4129767952109660</value>
+                  <value>4134456652433447</value>
+                  <value>4157213332670159</value>
+                  <value>4158758517677931</value>
+                  <value>4168696938629925</value>
+                  <value>4171397999167005</value>
+                  <value>4179719215697782</value>
+                  <value>4195832462863385</value>
+                  <value>4204237326785494</value>
+                  <value>4225628813173670</value>
+                  <value>4228411452607671</value>
+                  <value>4254074738931278</value>
+                  <value>4260059589824237</value>
+                  <value>4266200684857219</value>
+                  <value>4306586894261180</value>
+                  <value>4308156300921054</value>
+                  <value>4318414072191879</value>
+                  <value>4335531783520911</value>
+                  <value>4348786085525522</value>
+                  <value>4412720572684931</value>
+                  <value>4425161475596168</value>
+                  <value>4428154703770710</value>
+                  <value>4433091568498503</value>
+                  <value>4451438912406400</value>
+                  <value>4492491748959010</value>
+                  <value>4492677353108006</value>
+                  <value>4501449508569485</value>
+                  <value>4509922033272157</value>
+                  <value>4518350514020532</value>
+                  <value>4555104582813474</value>
+                  <value>4561368699336875</value>
+                  <value>4570636521433188</value>
+                  <value>4575255480814133</value>
+                  <value>4599285557366057</value>
+                  <value>4610064888664703</value>
+                  <value>4633065159406313</value>
+                  <value>4635330563105903</value>
+                  <value>4651007077623147</value>
+                  <value>4657269323674365</value>
+                  <value>4669558618943766</value>
+                  <value>4670613943676271</value>
+                  <value>4682744518117239</value>
+                  <value>4698163635895795</value>
+                  <value>4710792708725663</value>
+                  <value>4713464490314802</value>
+                  <value>4725673654161314</value>
+                  <value>4734310647841293</value>
+                  <value>4740713119940984</value>
+                  <value>4764202053279782</value>
+                  <value>4767265376804500</value>
+                  <value>4789911625179723</value>
+                  <value>4822367783500458</value>
+                  <value>4824023901222438</value>
+                  <value>4839043708100390</value>
+                  <value>4859525594182537</value>
+                  <value>4874006077381178</value>
+                  <value>4878364946692291</value>
+                  <value>4879265611163287</value>
+                  <value>4893092478075970</value>
+                  <value>4914700582394237</value>
+                  <value>4917187576956394</value>
+                  <value>4922710831011201</value>
+                  <value>4933461930348832</value>
+                  <value>4952583804639909</value>
+                  <value>4961003488432306</value>
+                  <value>4969856774088583</value>
+                  <value>4972228199573984</value>
+                  <value>4986925034905735</value>
+                  <value>4996263498048679</value>
+                  <value>5104807169438134</value>
+                  <value>5127412150261034</value>
+                  <value>5144043920225212</value>
+                  <value>5154903938030655</value>
+                  <value>5289285402893489</value>
+                  <value>5301645381939419</value>
+                  <value>5410056176712193</value>
+                  <value>5456712664803820</value>
+                  <value>6011099828110011</value>
+                  <value>6011149206456997</value>
+                  <value>6011197122270059</value>
+                  <value>6011231546538393</value>
+                  <value>6011252220172077</value>
+                  <value>6011305591981276</value>
+                  <value>6011360759745864</value>
+                  <value>6011381817520024</value>
+                  <value>6011382886333463</value>
+                  <value>6011393492413821</value>
+                  <value>6011477612335392</value>
+                  <value>6011518448009279</value>
+                  <value>6011581063717667</value>
+                  <value>6011603272871604</value>
+                  <value>6011626928491360</value>
+                  <value>6011681934117244</value>
+                  <value>6011706277606006</value>
+                  <value>6011732631674654</value>
+                  <value>6011826317034777</value>
+                  <value>6011917798331152</value>
+                  <value>6011935564104173</value>
+                  <value>6011948324228984</value>
+                  <value>6011975266774121</value>
+                  <value>6500249000784905</value>
+                  <value>6501313409525696</value>
+                  <value>6502195877055606</value>
+                  <value>6506982560413523</value>
+                  <value>6515067575568369</value>
+                  <value>6517779374888867</value>
+                  <value>6523180720198790</value>
+                  <value>6524376634971418</value>
+                  <value>6526448584969862</value>
+                  <value>6526777409109795</value>
+                  <value>6526955903501879</value>
+                  <value>6528911529051375</value>
+                  <value>6535328428560433</value>
+                  <value>6539653032686894</value>
+                  <value>6540981358631302</value>
+                  <value>6550399784335736</value>
+                  <value>6564459919350820</value>
+                  <value>6569097840281287</value>
+                  <value>6577777028615915</value>
+                  <value>6592074504369261</value>
+                  <value>6592243974328236</value>
+                  <value>6593939509150446</value>
+                  <value>6596735789587928</value>
+                  <value>6597248210463122</value>
+                  <value>4018105808392773675</value>
+                  <value>4044436772018844508</value>
+                  <value>4045036286570100739</value>
+                  <value>4063094974360571498</value>
+                  <value>4110266553600176127</value>
+                  <value>4162872756672112717</value>
+                  <value>4180192513916047166</value>
+                  <value>4209696857872688515</value>
+                  <value>4220495028289516646</value>
+                  <value>4225990116481262579</value>
+                  <value>4226219726886852999</value>
+                  <value>4243521033756702612</value>
+                  <value>4244953610136705533</value>
+                  <value>4255397449664185994</value>
+                  <value>4257110907449569602</value>
+                  <value>4311368326621416041</value>
+                  <value>4312133045694601139</value>
+                  <value>4358137750029944984</value>
+                  <value>4373370572092720777</value>
+                  <value>4390966588600992777</value>
+                  <value>4410582919485061752</value>
+                  <value>4426075337087318654</value>
+                  <value>4428780983793657331</value>
+                  <value>4457136361520330110</value>
+                  <value>4462038234743679432</value>
+                  <value>4467456915153312231</value>
+                  <value>4481172224716138389</value>
+                  <value>4497451418073897078</value>
+                  <value>4497913965512794052</value>
+                  <value>4599735407877245080</value>
+                  <value>4653178848915023204</value>
+                  <value>4659625317833446364</value>
+                  <value>4661996144291811856</value>
+                  <value>4666314527820883145</value>
+                  <value>4714017207228610634</value>
+                  <value>4725837176265195730</value>
+                  <value>4756039869079882102</value>
+                  <value>4798937978667559470</value>
+                  <value>4855853415727304322</value>
+                  <value>4897067971111209737</value>
+                  <value>4911818930706644725</value>
+                  <value>4973530368125489546</value>
+                  <value>4980323467523543940</value>
+                  <value>4989847570577635369</value>
+                </bin>
+                <bin default-name='false' value='&quot;Cluster 3&quot;'>
+                  <value>503874407318</value>
+                  <value>571465035400</value>
+                  <value>581686439828</value>
+                  <value>630423337322</value>
+                  <value>630424987505</value>
+                  <value>630484879808</value>
+                  <value>639023984367</value>
+                  <value>676102124465</value>
+                  <value>676372984911</value>
+                  <value>4464457352619</value>
+                  <value>4561546772499</value>
+                  <value>4681699462969</value>
+                  <value>4683638447911</value>
+                  <value>4755696071492</value>
+                  <value>4809701904914</value>
+                  <value>4900628639996</value>
+                  <value>30026790933302</value>
+                  <value>30030380240193</value>
+                  <value>30074693890476</value>
+                  <value>30197398657930</value>
+                  <value>30234966027947</value>
+                  <value>30235438713303</value>
+                  <value>30238755902988</value>
+                  <value>30270432095985</value>
+                  <value>30428204673351</value>
+                  <value>38052002992326</value>
+                  <value>38199021865320</value>
+                  <value>180011453250192</value>
+                  <value>180036456789979</value>
+                  <value>180049032966888</value>
+                  <value>213112402583773</value>
+                  <value>213156747557083</value>
+                  <value>213193596103206</value>
+                  <value>340953839692349</value>
+                  <value>342952484382519</value>
+                  <value>345933964507467</value>
+                  <value>371226440126102</value>
+                  <value>374930071163758</value>
+                  <value>375534208663984</value>
+                  <value>376028110684021</value>
+                  <value>376445266762684</value>
+                  <value>377026671291680</value>
+                  <value>2252055259910912</value>
+                  <value>2254917871818484</value>
+                  <value>2264937662466770</value>
+                  <value>2283743876903625</value>
+                  <value>2703186189652095</value>
+                  <value>2720012583106919</value>
+                  <value>2720433095629877</value>
+                  <value>3500969075198072</value>
+                  <value>3502088871723054</value>
+                  <value>3511378610369890</value>
+                  <value>3518669219150142</value>
+                  <value>3525590521269779</value>
+                  <value>3527536963490470</value>
+                  <value>3533742182628021</value>
+                  <value>3534330126107879</value>
+                  <value>3541160328600277</value>
+                  <value>3543591270174051</value>
+                  <value>3545109339866548</value>
+                  <value>3553629419254918</value>
+                  <value>3556613125071656</value>
+                  <value>3559160581764413</value>
+                  <value>3560797065840735</value>
+                  <value>3567697931646329</value>
+                  <value>3575789281659026</value>
+                  <value>3576021480694169</value>
+                  <value>3577578023716568</value>
+                  <value>3589255887819806</value>
+                  <value>3589289942931264</value>
+                  <value>3595192916105588</value>
+                  <value>3596217206093829</value>
+                  <value>4003989662068504</value>
+                  <value>4005676619255478</value>
+                  <value>4069975342931683</value>
+                  <value>4099707841315751</value>
+                  <value>4149238353975790</value>
+                  <value>4170689372027579</value>
+                  <value>4302480582202074</value>
+                  <value>4334230547694630</value>
+                  <value>4364010865167176</value>
+                  <value>4446368897795790</value>
+                  <value>4451952084362894</value>
+                  <value>4452366298769043</value>
+                  <value>4514242065619750</value>
+                  <value>4642255475285942</value>
+                  <value>4653879239169997</value>
+                  <value>4716561796955522</value>
+                  <value>4841313716651064</value>
+                  <value>4873783502705038</value>
+                  <value>4904681492230012</value>
+                  <value>4979422371139333</value>
+                  <value>4997733566924489</value>
+                  <value>4998109455173950</value>
+                  <value>5540636818935089</value>
+                  <value>6011104316292105</value>
+                  <value>6011348830550197</value>
+                  <value>6011504998544485</value>
+                  <value>6011652924285713</value>
+                  <value>6011693194885790</value>
+                  <value>6506116513503136</value>
+                  <value>6534628260579800</value>
+                  <value>4181833256558613886</value>
+                  <value>4223708906367574214</value>
+                  <value>4301028321766222513</value>
+                  <value>4457732997086323466</value>
+                  <value>4512828414983801773</value>
+                  <value>4536996888716062123</value>
+                  <value>4560395181594436016</value>
+                  <value>4797297220948468262</value>
+                  <value>4855488158131690372</value>
+                  <value>4906628655840914250</value>
+                  <value>4956828990005111019</value>
+                </bin>
+                <bin default-name='false' value='&quot;Cluster 4&quot;'>
+                  <value>567868110212</value>
+                  <value>571365235126</value>
+                  <value>630451534402</value>
+                  <value>4745996322265</value>
+                  <value>30044330818990</value>
+                  <value>30131826429364</value>
+                  <value>30199621383748</value>
+                  <value>30273037698427</value>
+                  <value>30551643947183</value>
+                  <value>36722699017270</value>
+                  <value>36913587729122</value>
+                  <value>180031190491743</value>
+                  <value>180048185037117</value>
+                  <value>180094419304907</value>
+                  <value>213141712584544</value>
+                  <value>213157767990030</value>
+                  <value>344709867813900</value>
+                  <value>346273234529002</value>
+                  <value>370877495212014</value>
+                  <value>372509258176510</value>
+                  <value>372520049757633</value>
+                  <value>373905417449658</value>
+                  <value>2242542703101233</value>
+                  <value>2712209726293386</value>
+                  <value>3518234918950662</value>
+                  <value>3521417320836166</value>
+                  <value>3531129874770000</value>
+                  <value>3551217896304745</value>
+                  <value>3566094707272327</value>
+                  <value>3576431665303017</value>
+                  <value>3583635130604947</value>
+                  <value>3586008444788268</value>
+                  <value>3590736522064285</value>
+                  <value>3598215285024754</value>
+                  <value>4586810168620942</value>
+                  <value>4681601008538160</value>
+                  <value>4836998673805450</value>
+                  <value>4908846471916297</value>
+                  <value>4939976756738216</value>
+                  <value>6011109736646996</value>
+                  <value>6011367958204270</value>
+                  <value>6011438889172900</value>
+                  <value>6011724471098086</value>
+                  <value>6011893664860915</value>
+                  <value>6538441737335434</value>
+                  <value>6538891242532018</value>
+                  <value>4587657402165341815</value>
+                  <value>4646845581490336108</value>
+                  <value>4792627764422477317</value>
+                  <value>4861310130652566408</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Total Spend' datatype='real' name='[Calculation_963207428348813314]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([amt])' />
+            </column>
+            <column caption='Transaction Frequency' datatype='integer' name='[Calculation_963207428349132803]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([trans_num])' />
+            </column>
+            <column caption='Customer Age' datatype='integer' name='[Calculation_963207428349329412]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;year&apos;, [dob], TODAY())' />
+            </column>
+            <column caption='Count_Customers' datatype='integer' name='[Calculation_963207428361658376]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([cc_num])' />
+            </column>
+            <column caption='Amount' datatype='real' name='[amt]' role='measure' type='quantitative' />
+            <column caption='CC_No' datatype='integer' name='[cc_num]' role='dimension' type='ordinal' />
+            <column caption='DOB' datatype='date' name='[dob]' role='dimension' type='ordinal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[cc_num]' derivation='None' name='[none:cc_num:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_963207428349329412]' derivation='Sum' name='[sum:Calculation_963207428349329412:qk]' pivot='key' type='quantitative' />
+            <column caption='Trans_No' datatype='string' name='[trans_num]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_963207428348813314]' derivation='User' name='[usr:Calculation_963207428348813314:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_963207428349132803]' derivation='User' name='[usr:Calculation_963207428349132803:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_963207428361658376]' derivation='User' name='[usr:Calculation_963207428361658376:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[sum:Calculation_963207428349329412:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[usr:Calculation_963207428348813314:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:gender:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:gender:nk]' member='&quot;F&quot;' />
+              <groupfilter function='member' level='[none:gender:nk]' member='&quot;M&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:gender:nk]</column>
+            <column>[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='341' />
+            <format attr='height' field='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[:Measure Names]' value='173' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[CC_No (clusters)]' />
+              <size column='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[Multiple Values]' />
+              <wedge-size column='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[usr:Calculation_963207428361658376:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9010497331619263' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:gender:nk] / [federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[:Measure Names])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{C2BF4164-6E16-4B7D-81EB-26FB8D1CE183}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='CC_Customer_Segmentation_Box_plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[cnt:Calculation_963207428349329412:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:AdhocCluster:1:ok]</field>
+            <field>[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:cc_num:ok]</field>
+            <field>[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:dob:ok]</field>
+            <field>[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:first:nk]</field>
+            <field>[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{452AFF38-3F72-4333-B46A-2C607AE484E9}' />
+    </window>
+    <window class='worksheet' name='Customer_Segmentation_Pie_Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[CC_No (clusters)]' type='color' />
+            <card pane-specification-id='2' param='[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[Multiple Values]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[CC_No (clusters)]</field>
+            <field>[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:AdhocCluster:1:ok]</field>
+            <field>[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:cc_num:ok]</field>
+            <field>[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:dob:ok]</field>
+            <field>[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:first:nk]</field>
+            <field>[federated.14q1ezj1b2dy1q1apatrh1m4pjtz].[none:gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2DE9AFFA-BEB5-4228-A0C5-D7C17323BBA9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='CC_Customer_Segmentation_Box_plot' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Customer_Segmentation_Pie_Chart' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
