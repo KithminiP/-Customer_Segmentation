@@ -35,5 +35,7 @@ Results & Business Impact
 📊 How to Access the Project
 
 Download the dataset from [(https://www.kaggle.com/datasets/priyamchoksi/credit-card-transactions-dataset/data)].
+
 Open the Tableau Workbook (.twbx).
+
 Explore Clusters, Customer Spend Trends & Dashboard Insights.
