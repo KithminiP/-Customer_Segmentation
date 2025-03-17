@@ -7,14 +7,19 @@ Dataset
 Source: Credit Card Transactions Dataset by Priyam Choksi (Kaggle).
 Contains customer transaction data, including amount spent, transaction frequency, merchant details, and more.
 Tech Stack & Tools
-🔹 Data Cleaning & Preprocessing: SQL, Python
-🔹 Visualization & Clustering: Tableau (K-Means Clustering)
-🔹 Key Metrics: Total Spend, Transaction Frequency, Customer Age
+
+  🔹 Data Cleaning & Preprocessing: SQL, Python
+  🔹 Visualization & Clustering: Tableau (K-Means Clustering)
+  🔹 Key Metrics: Total Spend, Transaction Frequency, Customer Age
 
 Key Insights from Clustering
+
 ✅ High-Value Customers (Premium Spenders) – Luxury customers with high spending & frequent transactions.
+
 ✅ Frequent Shoppers – Moderate spenders with frequent transactions, ideal for loyalty programs.
+
 ✅ Occasional Users – Low-spending, infrequent users who need engagement campaigns.
+
 ✅ Super Spenders – High-spend, high-frequency customers, the top priority for premium services.
 
 Results & Business Impact
