@@ -25,11 +25,15 @@ Key Insights from Clustering
 ✅ Super Spenders – High-spend, high-frequency customers, the top priority for premium services.
 
 Results & Business Impact
+
 ✔️ Identified customer clusters to drive personalized marketing.
+
 ✔️ Created Tableau dashboard for interactive analysis.
+
 ✔️ Helped optimize risk profiling & credit limit strategies.
 
 📊 How to Access the Project
-Download the dataset from [Kaggle Link].
+
+Download the dataset from [(https://www.kaggle.com/datasets/priyamchoksi/credit-card-transactions-dataset/data)].
 Open the Tableau Workbook (.twbx).
 Explore Clusters, Customer Spend Trends & Dashboard Insights.
