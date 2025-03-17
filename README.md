@@ -9,7 +9,9 @@ Contains customer transaction data, including amount spent, transaction frequenc
 Tech Stack & Tools
 
   🔹 Data Cleaning & Preprocessing: SQL, Python
+  
   🔹 Visualization & Clustering: Tableau (K-Means Clustering)
+  
   🔹 Key Metrics: Total Spend, Transaction Frequency, Customer Age
 
 Key Insights from Clustering
